@@ -16,7 +16,7 @@ body {
 
 @font-face {
     font-family: "modok";
-    src: url(/fonts/Modak-Regular.ttf);
+    src: url(fonts/Modak-Regular.ttf);
 }
 h1 {
     font-family: "modok";
