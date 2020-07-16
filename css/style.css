@@ -15,11 +15,11 @@ body {
 }
 
 @font-face {
-    font-family: "modok";
-    src: url(fonts/Modak-Regular.ttf);
+    font-family: "Modak-Regular";
+    src: url(/fonts/Modak-Regular.ttf);
 }
 h1 {
-    font-family: "modok";
+    font-family: "Modak-Regular";
 }
 
 /* change the brand and text color 
