@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="https://cdn.icon-icons.com/icons2/1447/PNG/128/32382hamburger_98925.png" type="image/x-icon">
+  <link rel="stylesheet" href="lib\bootstrap-4.5.0-dist\css\bootstrap.min.css">
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Hamburger</title>
+
+</head>
+
+<body>
+  <style>
+    body {
+      background-color: rgb(255, 208, 0);
+    }
+  </style>
+  <nav class="navbar navbar-custom  navbar-expand-lg navbar-light ">
+    <a class="navbar-brand" href="#">Cikcakk</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">Home</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="etlap.html">Étlap</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="rendeles.html">Rendelés</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kapcsolat.html">Kapcsolat</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<br>
+  <div class="container">
+    <div class="row">
+      <div class="col"></div>
+      <div class="col-6">
+        <h1>Hamburger rendelés</h1>
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+          <strong>Kedves Vásárlóink!</strong> A rendeléshez kerjük töltse ki az ürlapot!
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form action="">
+
+          <div class="form-group">
+            <label for="name" class="col-sm-2 col-form-label">Név:</label>
+            <input type="text" class="form-control" id="name" required >
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="col-sm-2 col-form-label">Email:</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="address" class="col-sm-2 col-form-label">Cím</label>
+            <input type="text" class="form-control" id="address"required >
+          </div>
+
+          <div class="form-group">
+            <label for="comment" class="col-sm-2 col-form-label">Megjegyzés</label>
+            <textarea type="text" class="form-control" id="comment" rows="5" required
+              style="margin-top: 0px; margin-bottom: 0px; height: 150px"></textarea>
+          </div>
+
+
+          <span>Extra feltét</span>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="extra" id="nothing" value="0" checked>
+            <label class="form-check-label" for="nothing">Nem kérek semmit.</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="extra" id="cheese" value="300">
+            <label class="form-check-label" for="cheese">Sajt (+300)</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="extra" id="bacon" value="400">
+            <label class="form-check-label" for="bacon">Bacon (+400)</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="extra" id="double-meat" value="1000">
+            <label class="form-check-label" for="double-meat">Dupla hús (+1000)</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="extra" id="cheesAndBacon" value="700">
+            <label class="form-check-label" for="cheesAndBacon">Sajt és bacon együtt (+700)</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="extra" id="cheessAndDoubleMeat" value="1300">
+            <label class="form-check-label" for="cheessAndDoubleMeat">Sajt és dupla hús együtt (+1300)</label>
+          </div>
+
+
+
+
+
+
+          <div class="form-group">
+            <label class="label label-block" for="sauce">Szósz</label>
+            <select id="sauce" name="sauce" class="form-control">
+            <option value="0" selected>hagyomágyos</option>
+            <option value="100">csípős (+100)</option></select>
+          </div>
+
+          <div class="form-group">
+            <label for="quantity">Mennyiség</label>
+            <input id="quantity" type="number" name="quantity" min="1" max="10"class="form-control" value="1" required>
+            <small class="form-text text-muted">
+              Minimum 1, maximum 10db
+            </small>
+          </div>
+          <div class="form-group">
+            <span id="orderValue">
+            Fizetendő:</span> <span id="message" class="show-price"></span> Ft
+          </div>
+          <button onclick="validate()" type="button" class="btn btn-custum">Megrendelés</button>
+        </form>
+      </div>
+      <div class="col"></div>
+
+    </div>
+  </div>
+
+  <section class="copyright py-4 text-center text-white">
+    <div class="container copy"><small class="pre-wrap">Copyright © Your Website 2020</small></div>
+  </section>
+
+  <script src="js/main.js"> </script>
+
+</body>
+
+</html>

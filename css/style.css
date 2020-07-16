@@ -1,0 +1,30 @@
+body {background-color: rgb(255, 208,0); border: 10px;}
+
+
+.navbar-custom {
+    background-color: #28A745;
+
+}
+
+.btn-custum{
+    background-color: #28A745;
+
+}
+.copy{
+    background-color: #28A745;
+
+}
+/* change the brand and text color 
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(49, 38, 13, 0.884);
+}
+/* change the link color 
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(49, 38, 13, 0.884);
+}*/
+/* change the color of active or hovered links 
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}*/
