@@ -1,6 +1,5 @@
 body {
     background-color: rgb(255, 208, 0);
-    border: 10px;
 }
 
 .navbar-custom {
@@ -13,13 +12,17 @@ body {
 .copy {
     background-color: #28a745;
 }
+@import url("https://fonts.googleapis.com/css2?family=Modak&display=swap");
 
-@font-face {
-    font-family: "Modak-Regular";
-    src: url(/fonts/Modak-Regular.ttf);
+h1 {
+    font-family: "Modak", cursive;
 }
 h1 {
-    font-family: "Modak-Regular";
+    font-family: "Modak", cursive;
+}
+
+p {
+    font-family: "Modak", cursive;
 }
 
 /* change the brand and text color 
