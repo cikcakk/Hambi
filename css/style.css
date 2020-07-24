@@ -24,6 +24,16 @@ h1 {
 p {
     font-family: "Modak", cursive;
 }
+.box {
+    padding: 20px;
+    background: rgba(40, 167, 69, 0.2);
+    height: 500px;
+}
+.box p {
+    margin: 10px 0;
+    font-size: 20px;
+    
+}
 
 /* change the brand and text color 
 .navbar-custom .navbar-brand,

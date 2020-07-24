@@ -20,87 +20,89 @@
     }
   </style> -->
 
-<body id="weather-body">
-  <div class="container">
+  <body id="weather-body">
+    <div class="container">
 
       <div class="row">
-          <div class="col-4"><b>Heti időjárás-előrejelzés</b></div>
-          <div class="col-4"></div>
-          <div class="col-4 text-right"><b>Ajánlatunk erre a napra:</b></div>
+        <div class="col-4"><b>Heti időjárás-előrejelzés</b></div>
+        <div class="col-4"></div>
+        <div class="col-4 text-right"><b>Ajánlatunk erre a napra:</b></div>
       </div>
       <div class="row">
 
-          <div class="col-4"><span id="today-degree">0</span> &degC (<span id="today-fahrenheit">0</span> &degF)</div>
-          <div class="col-4">
-              <form>
-                  <div class="form-group col-auto">
-                      <select class="custom-select" name="days-of-week" id="days-of-week">
-                          <option selected>Válaszd ki a napot!</option>
-                          <option value="0">Hétfő</option>
-                          <option value="1">Kedd</option>
-                          <option value="2">Szerda</option>
-                          <option value="3">Csütörtök</option>
-                          <option value="4">Péntek</option>
-                          <option value="5">Szombat</option>
-                          <option value="6">Vasárnap</option>
-                      </select>
-                  </div>
+        <div class="col-4"><span id="today-degree">0</span> &degC (<span id="today-fahrenheit">0</span> &degF)</div>
+        <div class="col-4">
+          <form>
+            <div class="form-group col-auto">
+              <select class="custom-select" name="days-of-week" id="days-of-week">
+                <option selected>Válaszd ki a napot!</option>
+                <option value="0">Hétfő</option>
+                <option value="1">Kedd</option>
+                <option value="2">Szerda</option>
+                <option value="3">Csütörtök</option>
+                <option value="4">Péntek</option>
+                <option value="5">Szombat</option>
+                <option value="6">Vasárnap</option>
+              </select>
+            </div>
 
-              </form>
-          </div>
-          <div class="col-4 text-right">
-              <i><span id="today-offer"></span></i>
-          </div>
+          </form>
+        </div>
+        <div class="col-4 text-right">
+          <i><span id="today-offer"></span></i>
+        </div>
       </div>
 
       <div id="min-max-avg" class="row">
-          <div class="col-4 text-left">
-              <small>MIN: <span id="min-degree">0</span> &degC (<span id="min-fahrenheit">0</span> &degF)</small>
-          </div>
-          <div class="col-4 text-center">
-              <small>AVG: <span id="avg-degree">0</span> &degC (<span id="avg-fahrenheit">0</span> &degF)</small>
-          </div>
-          <div class="col-4 text-right">
-              <small>MAX: <span id="max-degree">0</span> &degC (<span id="max-fahrenheit">0</span> &degF)</small>
-          </div>
+        <div class="col-4 text-left">
+          <small>MIN: <span id="min-degree">0</span> &degC (<span id="min-fahrenheit">0</span> &degF)</small>
+        </div>
+        <div class="col-4 text-center">
+          <small>AVG: <span id="avg-degree">0</span> &degC (<span id="avg-fahrenheit">0</span> &degF)</small>
+        </div>
+        <div class="col-4 text-right">
+          <small>MAX: <span id="max-degree">0</span> &degC (<span id="max-fahrenheit">0</span> &degF)</small>
+        </div>
       </div>
-  </div>
-  <nav class="navbar-custom navbar navbar-expand-lg navbar-light ">
-    
-    <a class="navbar-brand" href="index.html">Cikcakk</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Akcióink <span class="sr-only">Akcióink</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="etlap.html">Étlap</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="rendeles.html">Rendelés</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="kapcsolat.html">Kapcsolat</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="login.html">Login</a>
-        </li>
-      </ul>
     </div>
-  </nav>
+    <nav class="navbar-custom navbar navbar-expand-lg navbar-light ">
 
-<br>
-<br>
+      <a class="navbar-brand" href="index.html">Cikcakk</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Akcióink <span class="sr-only">Akcióink</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="etlap.html">Étlap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rendeles.html">Rendelés</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kapcsolat.html">Kapcsolat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-<center><h1 style="font-family:  'Modak', cursive; font-size: 3rem;">Akcióink</h1></center>
-<br> 
+    <br>
+    <br>
+
+    <center>
+      <h1 style="font-family:  'Modak', cursive; font-size: 3rem;">Akcióink</h1>
+    </center>
+    <br>
 
 
-  <!-- <div class="card-group">
+    <!-- <div class="card-group">
     <div class="card" style="width: 18rem;" >
       <img class="resize" src="/img/Chili-burger-menü-1-300x300.jpg" class="card-img-top" alt="kep">
       <div class="card-body">
@@ -126,28 +128,78 @@
         
       </div>
     </div>
-  </div> -->
+  </div> 
 
-  <div class="card-group">
-  <div class="card" style="width: 12rem;">
-    <img src="img/Bronx-burger-menü-1-300x300.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <p class="card-text">Kérd Menüben Amennyiben italt és sült krumplit is rendelsz a hamburgered mellé, kérd
-        menüben! A teljes összeg árából így 10% kedvezményt kapsz.</p>
+    <div class="card-group">
+      <div class="card" style="width: 12rem;">
+        <img src="img/Bronx-burger-menü-1-300x300.jpg" class="card-img-top" alt="kep1">
+        <div class="card-body">
+          <p class="card-text">Kérd Menüben Amennyiben italt és sült krumplit is rendelsz a hamburgered mellé, kérd
+            menüben! A teljes összeg árából így 10% kedvezményt kapsz.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 12rem;">
+        <img src="img/NevadaSuperstyle-300x300.jpg" class="card-img-top" alt="kep2">
+        <div class="card-body">
+          <p class="card-text">Heti Akció Szereted a csípőset? A chilis burger csak 1290Ft</p>
+        </div>
+      </div>
+      <div class="card" style="width: 12rem;">
+        <img src="img/Chiliburger-300x300.jpg" class="card-img-top" alt="kep3">
+        <div class="card-body">
+          <p class="card-text">Elérhető a házhozszállítás!.</p>
+        </div>
+      </div>
+    </div>-->
+
+
+
+
+
+    <div class="container">
+      <div class="row">
+        <div class=col-md-3>
+          <div class="box">
+            <img src="img/Bronx-1-300x300.jpg" class="img-thumbnail" alt="kep1">
+          <p>Kérd Menüben Amennyiben italt és sült krumplit is rendelsz a hamburgered mellé, kérd
+            menüben! A teljes összeg árából így 10% kedvezményt kapsz.</p>
+        </div>
+      </div>
+      
+      <div class=col-md-3>
+        <div class="box">
+          <img src="img/Chiliburger-300x300.jpg" class="img-thumbnail" alt="kep1">
+        <p>Heti Akció Szereted a csípőset? A chilis burger csak 1290Ft</p>
+      </div>
     </div>
-  </div>
-  <div class="card" style="width: 12rem;">
-    <img src="img/NevadaSuperstyle-300x300.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <p class="card-text">Heti Akció Szereted a csípőset? A chilis burger csak 1290Ft</p>
+    <div class=col-md-3>
+      <div class="box">
+        <img src="img/Sajtburger-menü-1-300x300.jpg" class="img-thumbnail" alt="kep1">
+      <p>Widgetünk most menüd mellé a hőmérsékletnek megfelelő italt is ajánl! Próbáld ki!</p>
+      </div>
     </div>
-  </div><div class="card" style="width: 12rem;">
-    <img src="img/Sajtburger-menü-1-300x300.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <p class="card-text">Elérhető a házhozszállítás!.</p>
+    <div class=col-md-3>
+      <div class="box">
+        <img src="img/Chiliburger-300x300.jpg" class="img-thumbnail" alt="kep1">
+      <p>Elérhető a házhozszállítás!</p>
+      </div>
     </div>
-  </div>
-</div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <section class="copyright py-4 text-center text-white">
+      <div class="container copy"><small class="pre-wrap">Copyright © Your Website 2020</small></div>
+    </section>
 
 
 
@@ -163,39 +215,19 @@
 
 
 
+    <script src="js/main.js"> </script>
+    <script src="lib/bootstrap-4.5.0-dist/js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"></script>
 
-
-  <section class="copyright py-4 text-center text-white">
-    <div class="container copy"><small class="pre-wrap">Copyright © Your Website 2020</small></div>
-  </section>
-          
-       
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <script src="js/main.js"> </script>
-          <script src="lib/bootstrap-4.5.0-dist/js/bootstrap.js"></script>
-          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-            crossorigin="anonymous"></script>
-
-</body>
+  </body>
 
 </html>
 
